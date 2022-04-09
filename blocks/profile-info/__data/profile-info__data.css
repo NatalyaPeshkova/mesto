@@ -1,0 +1,19 @@
+.profile-info__data{
+  font-weight: normal;
+  font-size: 18px;
+  box-sizing: border-box;
+  display: flex;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+
+@media screen and (max-width: 425px) {
+  .profile-info__data{
+     font-size: 14px;
+     align-items: center;
+     margin-left: 7px;
+  }
+}

@@ -1,0 +1,27 @@
+.profile-info__text{
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 48px;
+  width: 294px;
+  box-sizing: border-box;
+  display: flex;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+
+@media screen and (max-width: 720px) {
+  .profile-info__text{
+    font-size: 23px;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .profile-info__text{
+    font-size: 27px;
+    line-height: auto;
+  }
+}

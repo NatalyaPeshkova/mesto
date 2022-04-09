@@ -1,0 +1,36 @@
+.add-button {
+  border: solid 2px white;
+  width: 150px;
+  height: 50px;
+  margin-left: auto;
+  justify-content: center;
+  background-image: url(../../img/Vector_add-button.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:black;
+}
+
+.add-button:hover {
+  border: solid 2px rgba(153, 153, 153, 1);
+  background-image: url(../../img/Vector-add-button-gray.png);
+  cursor: pointer;
+
+}
+
+@media screen and (max-width: 1024px) {
+  .add-button {
+    width: 100px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .add-button {
+    margin-top: 32px;
+    max-width: 282px;
+    width: 100%;
+    height: 50px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

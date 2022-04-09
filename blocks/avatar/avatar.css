@@ -1,0 +1,13 @@
+.avatar{
+  border-radius: 50%;
+  max-width: 120px;
+  max-height: 120px;
+  align-self: start;
+}
+
+
+@media screen and (max-width: 425px) {
+  .avatar{
+    align-self: center;
+  }
+}

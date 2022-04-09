@@ -1,0 +1,10 @@
+.element__heart{
+  width: 22px;
+  height: 19px;
+  background-image: url(../../../img/heart.png);
+}
+
+.element__heart:hover{
+  cursor: pointer;
+  background-image: url(../../../img/heart_hover.svg);
+}

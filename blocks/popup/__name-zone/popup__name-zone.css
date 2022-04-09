@@ -1,0 +1,13 @@
+.popup__name-zone {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 27px;
+  margin-top: 54px;
+  margin-left: 36px;
+  margin-right: 36px;
+  border: none;
+  padding: 0;
+  border-bottom: solid rgba(84, 84, 84, 1) 1px;
+
+}
