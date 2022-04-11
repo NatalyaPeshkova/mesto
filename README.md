@@ -35,4 +35,4 @@
 *ul  https://nglazov.github.io/bem-validator-page/
 *ul  https://autoprefixer.github.io/ru/
 
-### GitHub Pages:
+### GitHub Pages:https://natalyapeshkova.github.io/mesto/
