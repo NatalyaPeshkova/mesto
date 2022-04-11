@@ -1,11 +1,25 @@
 .popup__info-zone {
+  -webkit-margin-start: 0;
   margin-inline-start: 0;
+  -webkit-margin-end: 0;
   margin-inline-end: 0;
+  -webkit-padding-before: 0;
   padding-block-start: 0;
+  -webkit-padding-start: 0;
   padding-inline-start: 0;
+  -webkit-padding-end: 0;
   padding-inline-end: 0;
-  padding-block-end: 0;display: flex;
+  -webkit-padding-after: 0;
+  padding-block-end: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   height: 27px;
   margin-top: 30px;
@@ -14,5 +28,4 @@
   border: none;
   padding: 0;
   border-bottom: solid rgba(84, 84, 84, 1) 1px;
-
 }

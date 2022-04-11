@@ -1,8 +1,12 @@
 .popup__text {
   display: block;
+  -webkit-margin-before: 0;
   margin-block-start: 0;
+  -webkit-margin-after: 0;
   margin-block-end: 0;
+  -webkit-margin-start: 0;
   margin-inline-start: 0;
+  -webkit-margin-end: 0;
   margin-inline-end: 0;
   font-weight: normal;
   font-family: 'Inter', Arial, sans-serif;
@@ -10,7 +14,6 @@
   color: black;
   margin-bottom: 13px;
   border: none;
-  height: 25px;
+  line-height: 25px;
   padding: 0;
-
 }

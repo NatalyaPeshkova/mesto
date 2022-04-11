@@ -1,5 +1,8 @@
 .popup__container {
   display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
   max-width: 430px;
@@ -19,7 +22,7 @@
 }
 
 @media screen and (max-width: 425px) {
-  .popup__container{
+  .popup__container {
     max-width: 282px;
     height: 322px;
   }

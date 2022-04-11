@@ -1,4 +1,6 @@
 .popup__button {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 50px;
   background-color: black;
@@ -6,9 +8,28 @@
   margin-left: 36px;
   margin-right: 36px;
   margin-bottom: 37px;
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
   appearance: auto;
   padding: 0;
   border: none;
-  width: 358px;
-  line-height: 50px;
+  max-width: 358px;
+  width: 100%;
+}
+
+.popup__button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  .popup__button {
+    max-width: 238px;
+    max-height: 46px;
+    width: 100%;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 25px;
+
+
+  }
 }

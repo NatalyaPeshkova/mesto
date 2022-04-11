@@ -1,12 +1,19 @@
 .popup__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  height: 23px;
+  max-height: 23px;
   margin-top: 34px;
   margin-left: 36px;
   margin-right: 64px;
-  color:black;
+  color: black;
   line-height: auto;
   -webkit-text-size-adjust: auto;
   font-weight: 900;
@@ -14,7 +21,7 @@
 }
 
 @media screen and (max-width: 425px) {
-  .popup__title{
+  .popup__title {
     font-weight: 700;
     font-size: 15px;
   }
