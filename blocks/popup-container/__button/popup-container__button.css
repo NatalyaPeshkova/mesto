@@ -1,4 +1,4 @@
-.popup__button {
+.popup-container__button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -17,12 +17,12 @@
   width: 100%;
 }
 
-.popup__button:hover {
+.popup-container__button:hover {
   cursor: pointer;
 }
 
 @media screen and (max-width: 425px) {
-  .popup__button {
+  .popup-container__button {
     max-width: 238px;
     max-height: 46px;
     width: 100%;

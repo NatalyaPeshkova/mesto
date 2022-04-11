@@ -1,8 +1,8 @@
 // открытие и закрытие попапа
-let popupContainer = document.querySelector('.popup__container');
+let popupContainer = document.querySelector('.popup-container');
 let popup = document.querySelector('.popup');
 let popupOpenBtn = document.querySelector('.profile-info__edit-button');
-let popupCloseBtn = document.querySelector('.popup__close-button');
+let popupCloseBtn = document.querySelector('.popup-container__close-button');
 
 
 
@@ -17,21 +17,20 @@ popupCloseBtn.addEventListener('click', popupOpenButton);
 
 
 
-document.querySelector('.popup__button').onclick = BtnClick;
+document.querySelector('.popup-container__button').onclick = BtnClick;
 
 
 function BtnClick(){
-  console.log('функция работает');
+ // console.log('функция работает');
 
-  // name
-  let userName = document.querySelector('.popup__text').value;
+  let userName = document.querySelector('.popup-container__text').value;
   document.querySelector('.profile-info__text').innerHTML = userName;
-  console.log(userName + ' from profile');
+// console.log(userName + ' from profile');
 
-  // job
-  let userJob = document.querySelector('.popup__text-info').value;
+
+  let userJob = document.querySelector('.popup-container__text-info').value;
   document.querySelector('.profile-info__data').innerHTML = userJob;
-  console.log(userJob);
+// console.log(userJob);
 
   // закрыть
   popup.classList.toggle('popup_opened');

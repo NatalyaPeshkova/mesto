@@ -1,4 +1,4 @@
-.popup__close-button {
+.popup-container__close-button {
   display: block;
   position: absolute;
   top: -40px;
@@ -9,6 +9,6 @@
   border: none;
 }
 
-.popup__close-button:hover {
+.popup-container__close-button:hover {
   cursor: pointer;
 }
