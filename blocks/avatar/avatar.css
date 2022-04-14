@@ -8,10 +8,11 @@
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .avatar {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+    margin-bottom: 26px;
   }
 }

@@ -25,7 +25,7 @@
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .profile-info__text {
     font-size: 27px;
   }
