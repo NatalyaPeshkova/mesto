@@ -24,7 +24,7 @@
 @media screen and (max-width: 425px) {
   .popup-container__button {
     max-width: 238px;
-    max-height: 46px;
+    height: 46px;
     width: 100%;
     margin: auto;
     margin-top: 45px;

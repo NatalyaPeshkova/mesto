@@ -18,7 +18,6 @@
   -webkit-margin-end: 0;
   margin-inline-end: 0;
   max-width: 318px;
-  max-height: 18px;
   margin-top: 67px;
   margin-left: 194px;
   margin-right: auto;
@@ -30,10 +29,10 @@
 
 @media screen and (max-width: 1024px) {
   .footer {
-    margin-left: auto;
     -ms-flex-item-align: start;
     -ms-grid-row-align: start;
     align-self: start;
+    margin-left: 70px;
   }
 }
 
