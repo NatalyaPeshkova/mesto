@@ -1,4 +1,4 @@
-.footer {
+.footer__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,14 +21,14 @@
   margin-top: 67px;
   margin-left: 194px;
   margin-right: auto;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   color: rgba(84, 84, 84, 1);
   font-weight: normal;
   font-size: 18px;
 }
 
 @media screen and (max-width: 1024px) {
-  .footer {
+  .footer__info {
     -ms-flex-item-align: start;
     -ms-grid-row-align: start;
     align-self: start;
@@ -37,8 +37,9 @@
 }
 
 @media screen and (max-width: 425px) {
-  .footer {
+  .footer__info {
     margin-left: 19px;
     margin-top: 48px;
+    font-size: 14px;
   }
 }

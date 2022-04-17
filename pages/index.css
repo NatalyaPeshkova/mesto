@@ -18,7 +18,7 @@
 @import url(../blocks/element/__text/element__text.css);
 @import url(../blocks/element/__heart/element__heart.css);
 @import url(../blocks/element/__heart_active/element__heart_active.css);
-@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__info/footer__info.css);
 @import url(../blocks/popup-container/popup-container.css);
 @import url(../blocks/popup-container/__title/popup-container__title.css);
 @import url(../blocks/popup-container/__name-zone/popup-container__name-zone.css);
