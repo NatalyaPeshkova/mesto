@@ -12,12 +12,12 @@
     <header class="header">
       <img class="logo logo_place_header" alt="логотип" src="./img/logo.svg">
     </header>
-    <main>
+    <main class="main">
       <section class="profile">
         <img class="avatar" alt="Фото" src="./img/Avatar.png">
         <div class="profile-info">
           <h1 class="profile-info__text">Жак-Ив Кусто</h1>
-          <p class="profile-info__edit-button"></p>
+          <button class="profile-info__edit-button" type="submit"></button>
           <p class="profile-info__data">Исследователь океанов</p>
         </div>
         <button class="add-button" type="button"></button>
@@ -34,7 +34,7 @@
         <div class="element">
           <img class="element__img" alt="Эльбрус" src="./img/2Elbrus.png">
           <div class="element__footer">
-            <h2 class="element__text">Эльбрус</h2>
+            <h2 class="element__text"> Гора Эльбрус</h2>
             <button class="element__heart" type="submit"></button>
           </div>
         </div>
@@ -48,7 +48,7 @@
         <div class="element">
           <img class="element__img" alt="Фото Эльбрус" src="./img/4Elbrus.png">
           <div class="element__footer">
-            <h2 class="element__text">Эльбрус</h2>
+            <h2 class="element__text"> Гора Эльбрус</h2>
             <button class="element__heart" type="submit"></button>
           </div>
         </div>
@@ -73,21 +73,22 @@
     <p class="footer__info">&copy; 2022 Mesto Russia</p>
   </footer>
 
-<div class="popup"></div>
-<div class="popup-container">
-  <button class="popup-container__close-button" type="button">
-    <img src="./img/Close_Icon.svg" alt="закрыть">
-  </button>
-  <div class="popup-container__title">Редактировать профиль</div>
-  <fieldset  class="popup-container__name-zone">
-    <input type="text" name="profilename" class="popup-container__text" value="Жак-Ив Кусто" required>
-  </fieldset>
-  <fieldset  class="popup-container__info-zone">
-    <input type="text" name="info" value="Исследователь океанов" class="popup-container__text-info" required>
-  </fieldset>
-  <button type="submit" class="popup-container__button">
-    <span class="popup-container__button-text">Сохранить</span>
-  </button>
+<div class="popup">
+  <div class="popup-container">
+    <button class="popup-container__close-button" type="button">
+      <img src="./img/Close_Icon.svg" alt="закрыть">
+    </button>
+    <h3 class="popup-container__title">Редактировать профиль</h3>
+    <fieldset  class="popup-container__name-zone">
+      <input type="text" name="profilename" class="popup-container__text" value="Жак-Ив Кусто" required>
+    </fieldset>
+    <fieldset  class="popup-container__info-zone">
+      <input type="text" name="info" value="Исследователь океанов" class="popup-container__text-info" required>
+    </fieldset>
+    <button type="submit" class="popup-container__button">
+      <span class="popup-container__button-text">Сохранить</span>
+    </button>
+  </div>
 </div>
 
 <script src="./script/scrirt.js"></script>

@@ -18,7 +18,7 @@
   -webkit-margin-end: 0;
   margin-inline-end: 0;
   max-width: 318px;
-  margin-top: 67px;
+  margin-top:14px;
   margin-left: 194px;
   margin-right: auto;
   margin-bottom: 28px;
@@ -41,5 +41,6 @@
     margin-left: 19px;
     margin-top: 48px;
     font-size: 14px;
+    margin-bottom: 36px;
   }
 }

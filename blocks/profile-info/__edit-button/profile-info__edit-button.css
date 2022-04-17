@@ -16,6 +16,8 @@
   margin-inline-start: 0;
   -webkit-margin-end: 0;
   margin-inline-end: 0;
+  border: 1px solid white;
+  background-color: black;
 }
 
 .profile-info__edit-button:hover {
