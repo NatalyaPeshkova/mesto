@@ -1,7 +1,7 @@
 .profile__text {
   font-weight: 700;
   font-size: 42px;
-  max-width: 294px;
+  width: 300px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-margin-before: 0;
