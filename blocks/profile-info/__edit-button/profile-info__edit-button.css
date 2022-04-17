@@ -18,6 +18,7 @@
   margin-inline-end: 0;
   border: 1px solid white;
   background-color: black;
+  margin-top: 5px;
 }
 
 .profile-info__edit-button:hover {
