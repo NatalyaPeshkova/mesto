@@ -10,8 +10,8 @@
   -moz-column-gap: 18px;
   column-gap: 18px;
   grid-template-areas:
-    "profile-info__text profile-info__edit-button"
-    "profile-info__data .";
+    "profile__text profile__edit-button"
+    "profile__data .";
   max-width: 336px;
   width: 100%;
   max-height: 73px;

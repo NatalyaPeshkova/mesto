@@ -1,7 +1,7 @@
 // открытие и закрытие попапа
 let popupContainer = document.querySelector('.popup-container');
 let popup = document.querySelector('.popup');
-let popupOpenBtn = document.querySelector('.profile-info__edit-button');
+let popupOpenBtn = document.querySelector('.profile__edit-button');
 let popupCloseBtn = document.querySelector('.popup-container__close-button');
 
 
@@ -24,12 +24,12 @@ function BtnClick(){
  // console.log('функция работает');
 
   let userName = document.querySelector('.popup-container__text').value;
-  document.querySelector('.profile-info__text').innerHTML = userName;
+  document.querySelector('.profile__text').innerHTML = userName;
 // console.log(userName + ' from profile');
 
 
   let userJob = document.querySelector('.popup-container__text-info').value;
-  document.querySelector('.profile-info__data').innerHTML = userJob;
+  document.querySelector('.profile__data').innerHTML = userJob;
 // console.log(userJob);
 
   // закрыть
