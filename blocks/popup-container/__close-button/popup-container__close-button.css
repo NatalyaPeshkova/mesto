@@ -5,10 +5,12 @@
   right: -40px;
   margin: auto;
   z-index: 1000;
-  background-color: black;
+  background-color:  rgba(0, 0, 0, 0.1);
   border: none;
+  transition: all 0.2s ease;
 }
 
 .popup-container__close-button:hover {
   cursor: pointer;
+  opacity: 0.5;
 }

@@ -20,7 +20,7 @@
   margin-right: auto;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1000px) {
   .elements {
     -ms-grid-columns: 282px 5px 282px;
     grid-template-columns: 282px 282px;
@@ -33,6 +33,7 @@
     -webkit-column-gap: 5px;
     -moz-column-gap: 5px;
     column-gap: 5px;
+    margin-left: auto;
   }
 }
 
