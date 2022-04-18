@@ -1,13 +1,6 @@
 .popup-container__name-zone {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   margin-top: 54px;
   margin-left: 36px;
@@ -15,4 +8,5 @@
   border: none;
   padding: 0;
   border-bottom: solid rgba(84, 84, 84, 1) 1px;
+  height: 27px;
 }
