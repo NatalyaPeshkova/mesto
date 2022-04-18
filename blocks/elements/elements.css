@@ -33,7 +33,6 @@
     -webkit-column-gap: 5px;
     -moz-column-gap: 5px;
     column-gap: 5px;
-    row-gap: 20px;
   }
 }
 
@@ -50,7 +49,6 @@
       "element"
       "element"
       "element";
-    row-gap: 20px;
     max-width: 282px;
     margin-left: 19px;
   }

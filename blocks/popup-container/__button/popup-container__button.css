@@ -1,6 +1,4 @@
 .popup-container__button {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   height: 50px;
   background-color: black;
@@ -8,17 +6,19 @@
   margin-left: 36px;
   margin-right: 36px;
   margin-bottom: 37px;
-  -webkit-appearance: auto;
-  -moz-appearance: auto;
   appearance: auto;
   padding: 0;
   border: none;
   max-width: 358px;
   width: 100%;
+  transition: all 0.2s ease;
+  color: white;
+
 }
 
 .popup-container__button:hover {
   cursor: pointer;
+  opacity: .5;
 }
 
 @media screen and (max-width: 425px) {
