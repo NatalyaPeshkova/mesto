@@ -1,18 +1,12 @@
 .elements {
   display: -ms-grid;
   display: grid;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-grid-columns: 282px 17px 282px 17px 282px;
   grid-template-columns: 282px 282px 282px;
-  -ms-grid-rows: 361px 20px 361px;
   grid-template-rows: repeat(2, 361px);
   grid-template-areas:
     "element element element"
     "element element element";
-  -webkit-column-gap: 17px;
-  -moz-column-gap: 17px;
   column-gap: 17px;
   row-gap: 20px;
   max-width: 880px;
@@ -22,16 +16,12 @@
 
 @media screen and (max-width: 1000px) {
   .elements {
-    -ms-grid-columns: 282px 5px 282px;
     grid-template-columns: 282px 282px;
-    -ms-grid-rows: 361px 20px 361px 20px 361px;
     grid-template-rows: repeat(3, 361px);
     grid-template-areas:
       "element element"
       "element element"
       "element element";
-    -webkit-column-gap: 5px;
-    -moz-column-gap: 5px;
     column-gap: 5px;
     margin-left: auto;
   }
@@ -39,9 +29,7 @@
 
 @media screen and (max-width: 550px) {
   .elements {
-    -ms-grid-columns: 282px;
     grid-template-columns: 282px;
-    -ms-grid-rows: 361px 20px 361px 20px 361px 20px 361px 20px 361px 20px 361px;
     grid-template-rows: repeat(6, 361px);
     grid-template-areas:
       "element"
