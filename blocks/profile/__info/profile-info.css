@@ -1,13 +1,8 @@
 .profile-info {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 294px 18px 24px;
   grid-template-columns: 294px 24px;
-  -ms-grid-rows: 39px 16px 18px;
   grid-template-rows: 39px 18px;
   row-gap: 16px;
-  -webkit-column-gap: 18px;
-  -moz-column-gap: 18px;
   column-gap: 18px;
   grid-template-areas:
     "profile__text profile__edit-button"
@@ -22,9 +17,7 @@
 
 @media screen and (max-width: 1100px) {
   .profile-info {
-    -ms-grid-columns: 220px 24px;
     grid-template-columns: 220px 24px;
-    -ms-grid-rows: 39px 18px;
     grid-template-rows: 39px 18px;
     row-gap: 0;
     margin-left: 0;
@@ -33,7 +26,8 @@
   .profile-info>*:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    margin-left: 46px;
+    margin-left: calc( 100% - 189px );
+    column-gap: 10px;
   }
 
   .profile-info>*:nth-child(2) {
