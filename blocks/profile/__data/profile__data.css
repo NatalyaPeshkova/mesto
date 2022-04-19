@@ -19,7 +19,6 @@
     font-size: 14px;
     align-items: center;
     justify-content: center;
-    margin-left: 63px;
-    width: calc( 100% - 63px );
+    margin-left: 50px;
   }
 }
