@@ -4,7 +4,6 @@
   display: flex;
   width: 24px;
   height: 24px;
-  border: solid 1px white;
   background-image: url(../../../img/Edit_Button.svg);
   background-repeat: no-repeat;
   background-position: center;
