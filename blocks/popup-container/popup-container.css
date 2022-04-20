@@ -13,14 +13,23 @@
   bottom: 0;
   left: 0;
   margin: auto;
+  margin-top: 263px;
   z-index: 1000;
   opacity: 1;
 
 }
 
+@media screen and (max-width: 1000px) {
+  .popup-container {
+    margin-top: 190px;
+  }
+}
+
+
 @media screen and (max-width: 425px) {
   .popup-container {
     max-width: 282px;
     height: 322px;
+    margin-top: 123px;
   }
 }

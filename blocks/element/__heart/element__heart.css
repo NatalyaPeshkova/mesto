@@ -9,5 +9,5 @@
 
 .element__heart:hover{
   cursor: pointer;
-  background-image: url(../../../img/heart_hover.svg);
+  opacity: .5;
 }
