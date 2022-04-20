@@ -13,7 +13,6 @@ let userJob1 = document.querySelector('.profile__data').innerHTML;
 function popupOpenButton(){
   popup.classList.toggle('popup_opened');
   popupContainer.classList.toggle('popup_opened');
-  popupCloseBtn.classList.toggle('popup_opened');
   document.querySelector('.popup-container__text').value = userName1;
   document.querySelector('.popup-container__text-info').value = userJob1;
 }
@@ -39,8 +38,7 @@ function formSubmitHandler (evt) {
     document.querySelector('.profile__data').innerHTML = userJob;
     popup.classList.toggle('popup_opened');
     popupContainer.classList.toggle('popup_opened');
-    popupCloseBtn.classList.toggle('popup_opened');
-}
+  }
 
 formElement.addEventListener('click', formSubmitHandler);
 
