@@ -20,7 +20,6 @@
 
 .profile__edit-button:hover {
   border: solid 1px rgba(196, 196, 196, 1);
-  background-image: url(../../../img/Edit_Button_Hover.svg);
   cursor: pointer;
   opacity: .5;
 }

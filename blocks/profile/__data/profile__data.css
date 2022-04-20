@@ -23,3 +23,9 @@
     max-width: 280px;
   }
 }
+@media screen and (max-width: 4250px) {
+  .profile__data {
+    margin-left: 63px;
+    width: 180px;
+  }
+}

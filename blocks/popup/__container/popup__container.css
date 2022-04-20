@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   max-width: 430px;
-  height: 330px;
+  max-height: 330px;
   text-align: center;
   border-radius: 10px;
   background-color: white;
@@ -23,7 +23,7 @@
   .popup__container {
     margin-top: 123px;
     max-width: 282px;
-    height: 322px;
+    max-height: 322px;
   }
 }
 
