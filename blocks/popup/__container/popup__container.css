@@ -1,4 +1,4 @@
-.popup-container {
+.popup__container {
   display: none;
   flex-direction: column;
   width: 100%;
@@ -20,16 +20,10 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .popup-container {
-    margin-top: 190px;
+  .popup__container {
+    margin-top: 123px;
     max-width: 282px;
     height: 322px;
   }
 }
 
-
-@media screen and (max-width: 425px) {
-  .popup-container {
-    margin-top: 123px;
-  }
-}

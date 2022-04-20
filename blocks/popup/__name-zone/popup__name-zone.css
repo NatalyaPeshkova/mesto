@@ -1,4 +1,4 @@
-.popup-container__name-zone {
+.popup__name-zone {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
