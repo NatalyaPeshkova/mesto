@@ -1,6 +1,5 @@
 // хорошая шутка про "последние 53 ошибки". я очень Вас понимаю.
 
-
 let popupContainer = document.querySelector('.popup__container');
 let popup = document.querySelector('.popup');
 let popupOpenBtn = document.querySelector('.profile__edit-button');

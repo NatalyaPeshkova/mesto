@@ -8,8 +8,15 @@
   font-family: 'Inter', Arial, sans-serif;
   font-size: 14px;
   color: black;
-  margin-bottom: 13px;
+  margin-top: 13px;
   border: none;
   padding: 0;
   height: 27px;
+  width: 358px;
+}
+
+@media screen and (max-width: 1000px) {
+  .popup__text {
+  width: 238px;
+  }
 }
