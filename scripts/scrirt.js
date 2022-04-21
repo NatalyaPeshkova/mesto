@@ -11,6 +11,7 @@ let userJob1 = document.querySelector('.profile__data').innerHTML;
 function popupOpenButton() {
   popup.classList.toggle('popup_opened');
   popupContainer.classList.toggle('popup_opened');
+  // если убрать popupContainer то не работает, что проверить?
 }
 popupOpenBtn.addEventListener('click', popupOpenButton);
 popupCloseBtn.addEventListener('click', popupOpenButton);
@@ -30,6 +31,7 @@ function formSubmitHandler(evt) {
   let userJob = jobInput.value;
   document.querySelector('.profile__text').innerHTML = userName;
   document.querySelector('.profile__data').innerHTML = userJob;
+  // если вынести за функцию, то не работает.
 }
 
 formElement.addEventListener('submit', formSubmitHandler);
