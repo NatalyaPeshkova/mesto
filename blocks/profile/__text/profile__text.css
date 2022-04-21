@@ -13,8 +13,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0;
-  margin-bottom: -10px;
-
+  min-height: 45px;
+  vertical-align: text-top;
 }
 
 
