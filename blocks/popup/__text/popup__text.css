@@ -8,11 +8,11 @@
   font-family: 'Inter', Arial, sans-serif;
   font-size: 14px;
   color: black;
-  margin-top: 13px;
   border: none;
   padding: 0;
   height: 27px;
   width: 358px;
+  margin-top: 13px;
 }
 
 @media screen and (max-width: 1000px) {
