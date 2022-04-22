@@ -17,6 +17,6 @@
 
 @media screen and (max-width: 1000px) {
   .popup__text {
-  width: 238px;
+    width: 238px;
   }
 }

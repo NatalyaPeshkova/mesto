@@ -6,7 +6,8 @@
   margin-left: auto;
   background-size: 282px 50px;
   justify-content: center;
-  background-image: url(../../../img/AddButton.svg);
+  background-image: url(../../../img/Vector.svg);
+  background-size: 22px 22px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
@@ -25,8 +26,6 @@
   .profile__add-button {
     margin-left: 15px;
     max-width: 282px;
-    width: 100%;
-    min-height: 50px;
   }
 }
 
@@ -35,6 +34,7 @@
     margin-top: 36px;
     margin-left: 0;
     margin-right: 0;
-    background-image: url(../../../img/AddButtonMobileVersion.svg);
+    /*background-image: url(../../../img/AddButtonMobileVersion.svg);*/
+    background-size: 16px 16px;
   }
 }

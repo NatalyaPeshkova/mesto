@@ -1,13 +1,11 @@
 .element {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
   max-width: 281px;
-  height: 361px;
+  /*height: 361px;*/
   width: 282px;
-  background-color:white;
+  background-color: white;
   border: 0;
 }

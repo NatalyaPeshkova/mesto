@@ -23,6 +23,7 @@
     max-width: 280px;
   }
 }
+
 @media screen and (max-width: 425px) {
   .profile__data {
     margin-left: 63px;
