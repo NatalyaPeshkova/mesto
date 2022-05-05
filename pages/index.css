@@ -18,6 +18,7 @@
 @import url(../blocks/element/__text/element__text.css);
 @import url(../blocks/element/__heart/element__heart.css);
 @import url(../blocks/element/__heart/_active/element__heart_active.css);
+@import url(../blocks/element/__trash/element__trash.css);
 @import url(../blocks/footer/__info/footer__info.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__title/popup__title.css);
@@ -27,6 +28,16 @@
 @import url(../blocks/popup/__button-text/popup__button-text.css);
 @import url(../blocks/popup/__close-button/popup__close-button.css);
 @import url(../blocks/popup/popup.css);
-@import url(../blocks/popup/_opened/popup_opened.css);
 @import url(../blocks/popup/__close-button-icon/popup__close-button-icon.css);
+@import url(../blocks/popup-location/__button-text/popup-location__button-text.css);
+@import url(../blocks/popup-location/__button/popup-location__button.css);
+@import url(../blocks/popup-location/__close-button-icon/popup-location__close-button-icon.css);
+@import url(../blocks/popup-location/__close-button/popup-location__close-button.css);
+@import url(../blocks/popup-location/__container/popup-location__container.css);
+@import url(../blocks/popup-location/__info-zone/popup-location__info-zone.css);
+@import url(../blocks/popup-location/__text/popup-location__text.css);
+@import url(../blocks/popup-location/__title/popup-location__title.css);
+@import url(../blocks/popup-location/popup-location.css);
+
+@import url(../blocks/popup/_opened/popup_opened.css);
 

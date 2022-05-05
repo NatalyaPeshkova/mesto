@@ -1,0 +1,15 @@
+.element__trash {
+  width: 18px;
+  height: 19px;
+  background-image: url(../../../img/Trash.svg);
+  border: none;
+  position: absolute;
+  transition: all 0.2s ease;
+  background-color: none;
+}
+
+.element__trash:hover {
+  cursor: pointer;
+  opacity: .5;
+
+}
