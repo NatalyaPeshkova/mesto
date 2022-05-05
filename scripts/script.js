@@ -10,12 +10,7 @@ let profileJob = document.querySelector('.profile__data');
 let nameInput = document.getElementById('popupName');
 let jobInput = document.getElementById('job');
 let formElement = document.querySelector('form');
-let cardLike = document.querySelector('.element__heart');
-let cardLikeContent = cardLike.innerHTML;
-let cardLikeButton = document.querySelector('.element__heart-icon');
 
-console.log(cardLike.innerHTML);
-console.log(cardLikeContent);
 
 
 // функция - добавляет модификатор для блока popup и открывает или закрывает его.
@@ -50,11 +45,4 @@ function formSubmitHandler (evt) {
 
 formElement.addEventListener('submit', formSubmitHandler);
 
-// лайк карточки
-
-function functionMakeCardLikeActive() {
-  cardLike.innerHTML =  '<img id="heartLike" src="./img/Heart_active.svg" class="element__heart-icon">';
-}
-
-cardLikeButton.addEventListener('click', functionMakeCardLikeActive);
-
+// лайк карsточки

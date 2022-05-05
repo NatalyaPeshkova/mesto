@@ -1,29 +1,55 @@
-// const initialCards = [
-//   {
-//     name: 'Архыз',
-//     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
-//   },
-//   {
-//     name: 'Челябинская область',
-//     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
-//   },
-//   {
-//     name: 'Иваново',
-//     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
-//   },
-//   {
-//     name: 'Камчатка',
-//     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
-//   },
-//   {
-//     name: 'Холмогорский район',
-//     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
-//   },
-//   {
-//     name: 'Байкал',
-//     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
-//   }
-// ];
+const initialCards = [
+  {
+    name: 'Архыз',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
+  },
+  {
+    name: 'Челябинская область',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
+  },
+  {
+    name: 'Иваново',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
+  },
+  {
+    name: 'Камчатка',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
+  },
+  {
+    name: 'Холмогорский район',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+  },
+  {
+    name: 'Байкал',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+  }
+];
+// Дом элементы
+
+const imageContainer = document.querySelector(".elements");
+// const form = document.querySelector(".form");
+// const input = document.querySelector(".form__input");
+
+//  Рендер карточки
+
+const renderImageCard = (initialCards) => {
+  // imageContainer.prepend(generateImageCard(imageData));
+  imageContainer.insertAdjacentHTML(
+    'beforeEnd',
+    `<div class="element">
+        <img class="element__img" alt="Карачаевск" src="${initialCards.link}">
+        <div class="element__footer">
+          <h2 class="element__text">${initialCards.name}</h2>
+          <button class="element__heart" type="button"></button>
+    </div>
+  </div>`
+  );
+};
+
+initialCards.forEach((initialCards) => {
+  renderImageCard(initialCards);
+});
+
 
 // // Шаблоны
 
@@ -31,11 +57,6 @@
 //   .querySelector("#todo-template")
 //   .content.querySelector(".todo-card");
 
-// // Дом элементы
-
-// const todoContainer = document.querySelector(".todo__list");
-// const form = document.querySelector(".form");
-// const input = document.querySelector(".form__input");
 
 // // Обработчики событий
 
@@ -72,14 +93,6 @@
 //   return newTodoCard;
 // }
 
-// // Рендер карточки
 
-// const renderTodoCard = (todoData) => {
-//   todoContainer.prepend(generateTodoCard(todoData));
-// };
-
-// todoList.forEach((todoData) => {
-//   renderTodoCard(todoData);
-// });
 
 // form.addEventListener("submit", handleSubmitAddTodoForm);
