@@ -24,20 +24,35 @@ const initialCards = [
     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
   }
 ];
+
 // Дом элементы
 
 const imageContainer = document.querySelector(".elements");
-// const form = document.querySelector(".form");
-// const input = document.querySelector(".form__input");
+const popupLocationContainer = document.querySelector(".popup-location__container");
+console.log(popupLocationContainer);
+const inputLocationName = document.getElementById("LocationName");
+const inputLocationLink = document.getElementById("locationLink");
+
+// Обработчики событий
+
+const handleSubmitAddCardForm = (event) => {
+  event.preventDefault();
+
+  renderImageCard({ name: inputLocationName.value, link: inputLocationLink.value });
+
+  inputLocationName.value = ' ';
+  inputLocationLink.value = ' ';
+};
+
 
 //  Рендер карточки
 
 const renderImageCard = (initialCards) => {
   // imageContainer.prepend(generateImageCard(imageData));
   imageContainer.insertAdjacentHTML(
-    'beforeEnd',
+    'afterBegin',
     `<div class="element">
-        <img class="element__img" alt="Карачаевск" src="${initialCards.link}">
+        <img class="element__img" alt="Фотография" src="${initialCards.link}">
         <div class="element__footer">
           <h2 class="element__text">${initialCards.name}</h2>
           <button class="element__heart" type="button"></button>
@@ -50,6 +65,11 @@ initialCards.forEach((initialCards) => {
   renderImageCard(initialCards);
 });
 
+popupLocationContainer.addEventListener("submit", handleSubmitAddCardForm);
+
+
+
+// добавление карточки
 
 // // Шаблоны
 

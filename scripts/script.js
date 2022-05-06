@@ -1,16 +1,18 @@
 
 let popup = document.querySelector('.popup');
-let popupLocation = document.querySelector('.popup-location');
 let popupOpenButton = document.querySelector('.profile__edit-button');
 let popupCloseButton = document.querySelector('.popup__close-button');
+
+let popupLocation = document.querySelector('.popup-location');
 let popupLocationOpenButton = document.getElementById('addButton');
 let popupLocationCloseButton = document.getElementById('ClosePopupLocation');
+
 let profileName = document.querySelector('.profile__text');
 let profileJob = document.querySelector('.profile__data');
 let nameInput = document.getElementById('popupName');
 let jobInput = document.getElementById('job');
 let formElement = document.querySelector('form');
-
+console.log(formElement);
 
 
 // функция - добавляет модификатор для блока popup и открывает или закрывает его.
@@ -28,7 +30,7 @@ popupCloseButton.addEventListener('click', functionPopupOpen);
 //функция - добавляет модификатор для блока popup-location и открывает или закрывает его.
 function functionPopupLocationOpen(){
   popupLocation.classList.toggle('popup_opened');
-  console.log('functionPopupLocationOpen is done');
+  //console.log('functionPopupLocationOpen is done');
 }
 popupLocationOpenButton.addEventListener('click',functionPopupLocationOpen);
 popupLocationCloseButton.addEventListener('click', functionPopupLocationOpen);
@@ -45,4 +47,3 @@ function formSubmitHandler (evt) {
 
 formElement.addEventListener('submit', formSubmitHandler);
 
-// лайк карsточки
