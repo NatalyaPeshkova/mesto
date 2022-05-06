@@ -11,13 +11,16 @@ const profileName = document.querySelector('.profile__text');
 const profileJob = document.querySelector('.profile__data');
 const nameInput = document.getElementById('popupName');const jobInput = document.getElementById('job');
 const formElement = document.querySelector('form');
-// console.log(formElement);
 
+const popupImage = document.querySelector('.popup-image');
+const popupImageOpeningField = document.querySelector('.element__img');
+const popupImageCloseButton = document.querySelector('.popup-image__close-button');
+const images = document.querySelectorAll('.element');
+console.log(images);
 
 // функция - добавляет модификатор для блока popup и открывает или закрывает его.
 // И заносит данные из профиля в поля ввода. ПР4: Поля формы.
 // При открытии формы поля «Имя» и «О себе» должны быть заполнены теми значениями, которые отображаются на странице.
-
 function functionPopupOpen() {
   popup.classList.toggle('popup_opened');
   nameInput.value = profileName.innerHTML;
@@ -34,6 +37,17 @@ function functionPopupLocationOpen(){
 popupLocationOpenButton.addEventListener('click',functionPopupLocationOpen);
 popupLocationCloseButton.addEventListener('click', functionPopupLocationOpen);
 
+// функция - добавляет модификатор для блока popup-image и открывает или закрывает его.
+function functionPopupImageOpen(){
+
+  for (let i = 0; i <= images.length; i++);
+  console.log(images.classList);
+
+  images.classList.toggle('popup_opened');
+  console.log('functionPopupimageOpen is done');
+}
+popupImageOpeningField.addEventListener('click',functionPopupImageOpen);
+popupImageCloseButton.addEventListener('click', functionPopupImageOpen);
 
 
 // Обработчик «отправки» формы/
@@ -45,4 +59,19 @@ function formSubmitHandler (evt) {
  }
 
 formElement.addEventListener('submit', formSubmitHandler);
+
+// =================================================================
+
+
+// const functionPopupImageOpen = (images) => {
+//   popupImage.classList.toggle('popup_opened');
+//   console.log('functionPopupimageOpen is done');
+// };
+// popupImageOpeningField.addEventListener('click',functionPopupImageOpen);
+// popupImageCloseButton.addEventListener('click', functionPopupImageOpen);
+
+
+// images.forEach((images) => {
+//   functionPopupImageOpen(images);
+// });
 
