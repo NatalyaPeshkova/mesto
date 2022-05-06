@@ -1,18 +1,17 @@
 
-let popup = document.querySelector('.popup');
-let popupOpenButton = document.querySelector('.profile__edit-button');
-let popupCloseButton = document.querySelector('.popup__close-button');
+const popup = document.querySelector('.popup');
+const popupOpenButton = document.querySelector('.profile__edit-button');
+const popupCloseButton = document.querySelector('.popup__close-button');
 
-let popupLocation = document.querySelector('.popup-location');
-let popupLocationOpenButton = document.getElementById('addButton');
-let popupLocationCloseButton = document.getElementById('ClosePopupLocation');
+const popupLocation = document.querySelector('.popup-location');
+const popupLocationOpenButton = document.getElementById('addButton');
+const popupLocationCloseButton = document.getElementById('ClosePopupLocation');
 
-let profileName = document.querySelector('.profile__text');
-let profileJob = document.querySelector('.profile__data');
-let nameInput = document.getElementById('popupName');
-let jobInput = document.getElementById('job');
-let formElement = document.querySelector('form');
-console.log(formElement);
+const profileName = document.querySelector('.profile__text');
+const profileJob = document.querySelector('.profile__data');
+const nameInput = document.getElementById('popupName');const jobInput = document.getElementById('job');
+const formElement = document.querySelector('form');
+// console.log(formElement);
 
 
 // функция - добавляет модификатор для блока popup и открывает или закрывает его.
