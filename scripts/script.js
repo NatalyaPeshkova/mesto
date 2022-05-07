@@ -9,14 +9,15 @@ const popupLocationCloseButton = document.getElementById('ClosePopupLocation');
 
 const profileName = document.querySelector('.profile__text');
 const profileJob = document.querySelector('.profile__data');
-const nameInput = document.getElementById('popupName');const jobInput = document.getElementById('job');
+const nameInput = document.getElementById('popupName');
+const jobInput = document.getElementById('job');
 const formElement = document.querySelector('form');
 
 const popupImage = document.querySelector('.popup-image');
-const popupImageOpeningField = document.querySelector('.element__img');
+// const popupImageOpeningField = document.querySelector('.element__img');
 const popupImageCloseButton = document.querySelector('.popup-image__close-button');
 const images = document.querySelectorAll('.element');
-console.log(images);
+
 
 // функция - добавляет модификатор для блока popup и открывает или закрывает его.
 // И заносит данные из профиля в поля ввода. ПР4: Поля формы.
@@ -32,21 +33,14 @@ popupCloseButton.addEventListener('click', functionPopupOpen);
 //функция - добавляет модификатор для блока popup-location и открывает или закрывает его.
 function functionPopupLocationOpen(){
   popupLocation.classList.toggle('popup_opened');
-  //console.log('functionPopupLocationOpen is done');
 }
 popupLocationOpenButton.addEventListener('click',functionPopupLocationOpen);
 popupLocationCloseButton.addEventListener('click', functionPopupLocationOpen);
 
-// функция - добавляет модификатор для блока popup-image и открывает или закрывает его.
+//функция - добавляет модификатор для блока popup-image и открывает или закрывает его.
 function functionPopupImageOpen(){
-
-  for (let i = 0; i <= images.length; i++);
-  console.log(images.classList);
-
-  images.classList.toggle('popup_opened');
-  console.log('functionPopupimageOpen is done');
+  document.querySelector('.popup-image').style.display = 'none';
 }
-popupImageOpeningField.addEventListener('click',functionPopupImageOpen);
 popupImageCloseButton.addEventListener('click', functionPopupImageOpen);
 
 
@@ -60,18 +54,4 @@ function formSubmitHandler (evt) {
 
 formElement.addEventListener('submit', formSubmitHandler);
 
-// =================================================================
-
-
-// const functionPopupImageOpen = (images) => {
-//   popupImage.classList.toggle('popup_opened');
-//   console.log('functionPopupimageOpen is done');
-// };
-// popupImageOpeningField.addEventListener('click',functionPopupImageOpen);
-// popupImageCloseButton.addEventListener('click', functionPopupImageOpen);
-
-
-// images.forEach((images) => {
-//   functionPopupImageOpen(images);
-// });
 

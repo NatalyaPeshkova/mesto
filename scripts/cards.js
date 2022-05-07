@@ -1,5 +1,4 @@
-const initialCards = [
-  {
+const initialCards = [{
     name: 'Архыз',
     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
   },
@@ -29,7 +28,6 @@ const initialCards = [
 
 const imageContainer = document.querySelector(".elements");
 const popupLocationContainer = document.querySelector(".popup-location__container");
-// console.log(popupLocationContainer);
 const inputLocationName = document.getElementById("LocationName");
 const inputLocationLink = document.getElementById("locationLink");
 
@@ -38,7 +36,10 @@ const inputLocationLink = document.getElementById("locationLink");
 const handleSubmitAddCardForm = (event) => {
   event.preventDefault();
 
-  renderImageCard({ name: inputLocationName.value, link: inputLocationLink.value });
+  renderImageCard({
+    name: inputLocationName.value,
+    link: inputLocationLink.value
+  });
 
   inputLocationName.value = ' ';
   inputLocationLink.value = ' ';
@@ -67,5 +68,13 @@ initialCards.forEach((initialCards) => {
 
 popupLocationContainer.addEventListener("submit", handleSubmitAddCardForm);
 
+// попап с картинкой места
+
+document.querySelectorAll('.elements img').forEach(image => {
+  image.onclick = () => {
+    document.querySelector('.popup-image').style.display = 'block';
+    document.querySelector('.popup-image img').src = image.getAttribute('src');
+  }
+});
 
 
