@@ -56,7 +56,9 @@ const renderImageCard = (initialCards) => {
         <img class="element__img" alt="Фотография" src="${initialCards.link}">
         <div class="element__footer">
           <h2 class="element__text">${initialCards.name}</h2>
-          <button class="element__heart" type="button"></button>
+          <button class="element__heart" type="button" id="heartBtn">
+
+          </button>
     </div>
   </div>`
   );
@@ -65,16 +67,25 @@ const renderImageCard = (initialCards) => {
 initialCards.forEach((initialCards) => {
   renderImageCard(initialCards);
 });
-
 popupLocationContainer.addEventListener("submit", handleSubmitAddCardForm);
 
-// попап с картинкой места
 
+
+// функция открывает попап с картинкой места
 document.querySelectorAll('.elements img').forEach(image => {
   image.onclick = () => {
     document.querySelector('.popup-image').style.display = 'block';
     document.querySelector('.popup-image img').src = image.getAttribute('src');
+
+    // document.querySelector('.popup-image h4').textContent  =
   }
 });
 
 
+// лайк карточки
+document.querySelectorAll('.element__heart').forEach(heartBtn => {
+  heartBtn.onclick = () => {
+    document.querySelector('.element__heart').classList.add('element__heart_active');
+    document.querySelector('.element__heart').classList.remove('element__heart');
+  }
+});

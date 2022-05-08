@@ -13,3 +13,16 @@
   margin: auto;
   z-index: 1;
 }
+/*
+.profile__edit-button + .popup{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 10s; opacity: .5s linear;
+}
+
+
+.profile__edit-button:active + .popup{
+  visibility: visible;
+  opacity: 1;
+}
+ */

@@ -36,8 +36,9 @@ function functionPopupLocationOpen(){
 }
 popupLocationOpenButton.addEventListener('click',functionPopupLocationOpen);
 popupLocationCloseButton.addEventListener('click', functionPopupLocationOpen);
+document.querySelector('.popup-location__button').addEventListener('click', functionPopupLocationOpen);
 
-//функция - добавляет модификатор для блока popup-image и открывает или закрывает его.
+//функция - добавляет модификатор для блока popup-image и закрывает его.
 function functionPopupImageOpen(){
   document.querySelector('.popup-image').style.display = 'none';
 }
