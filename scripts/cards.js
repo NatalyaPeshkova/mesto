@@ -51,10 +51,15 @@ const handleSubmitAddCardForm = (event) => {
   inputLocationName.value = ' ';
   inputLocationLink.value = ' ';
 };
+
 const handelDeleteImageCard = (event) => {
   event.target.closest('.element').remove();
 
-}
+};
+
+const handelCheckImageCard = (event) => {
+  event.target.closest('.element__heart').classList.toggle('element__heart_active');
+};
 
 // Генерация карточки
 const generateImageCard = (initialCards) => {
@@ -68,6 +73,9 @@ const generateImageCard = (initialCards) => {
 
   const deleteButton = newImageCard.querySelector('.element__trash');
   deleteButton.addEventListener('click', handelDeleteImageCard);
+
+  const checkButton = newImageCard.querySelector('.element__heart');
+  checkButton.addEventListener('click', handelCheckImageCard);
 
 
   return newImageCard;
@@ -88,14 +96,14 @@ popupLocationContainer.addEventListener("submit", handleSubmitAddCardForm);
 
 // // функция открывает попап с картинкой места
 
+document.querySelectorAll('.elements img').forEach(image => {
+  image.onclick = () => {
+    document.querySelector('.popup-image').style.display = 'block';
+    document.querySelector('.popup-image img').src = image.getAttribute('src');
+    document.querySelector('.popup-image__text').value = inputLocationName;
 
-
-// document.querySelectorAll('.elements img').forEach(image => {
-//   image.onclick = () => {
-//     document.querySelector('.popup-image').style.display = 'block';
-//     document.querySelector('.popup-image img').src = image.getAttribute('src');
-//   }
-// });
+  }
+});
 
 
 // // лайк карточки
