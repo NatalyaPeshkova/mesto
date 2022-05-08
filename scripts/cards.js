@@ -24,6 +24,13 @@ const initialCards = [{
   }
 ];
 
+
+
+// Швблоны
+const imageCardTemplate = document.querySelector('#imageCard').content.querySelector(".element");
+console.log(imageCardTemplate);
+
+
 // Дом элементы
 
 const imageContainer = document.querySelector(".elements");
@@ -45,23 +52,24 @@ const handleSubmitAddCardForm = (event) => {
   inputLocationLink.value = ' ';
 };
 
+// Генерация карточки
+const generateImageCard = (initialCards) => {
+  const newImageCard = imageCardTemplate.cloneNode(true);
+
+  const titleImageCard = newImageCard.querySelector('.element__text');
+  titleImageCard.textContent = initialCards.name;
+
+  const pictureImageCard = newImageCard.querySelector('.element__img');
+  pictureImageCard.src = initialCards.link;
+
+
+  return newImageCard;
+}
 
 //  Рендер карточки
 
 const renderImageCard = (initialCards) => {
-  // imageContainer.prepend(generateImageCard(imageData));
-  imageContainer.insertAdjacentHTML(
-    'afterBegin',
-    `<div class="element">
-        <img class="element__img" alt="Фотография" src="${initialCards.link}">
-        <div class="element__footer">
-          <h2 class="element__text">${initialCards.name}</h2>
-          <button class="element__heart" type="button" id="heartBtn">
-
-          </button>
-    </div>
-  </div>`
-  );
+  imageContainer.prepend(generateImageCard(initialCards));
 };
 
 initialCards.forEach((initialCards) => {
@@ -71,21 +79,83 @@ popupLocationContainer.addEventListener("submit", handleSubmitAddCardForm);
 
 
 
-// функция открывает попап с картинкой места
-document.querySelectorAll('.elements img').forEach(image => {
-  image.onclick = () => {
-    document.querySelector('.popup-image').style.display = 'block';
-    document.querySelector('.popup-image img').src = image.getAttribute('src');
-
-    // document.querySelector('.popup-image h4').textContent  =
-  }
-});
+// // функция открывает попап с картинкой места
 
 
-// лайк карточки
-document.querySelectorAll('.element__heart').forEach(heartBtn => {
-  heartBtn.onclick = () => {
-    document.querySelector('.element__heart').classList.add('element__heart_active');
-    document.querySelector('.element__heart').classList.remove('element__heart');
-  }
-});
+
+// document.querySelectorAll('.elements img').forEach(image => {
+//   image.onclick = () => {
+//     document.querySelector('.popup-image').style.display = 'block';
+//     document.querySelector('.popup-image img').src = image.getAttribute('src');
+//   }
+// });
+
+
+// // лайк карточки
+// document.querySelectorAll('.element__heart').forEach(heartBtn => {
+//   heartBtn.onclick = () => {
+//     document.querySelector('.element__heart').classList.add('element__heart_active');
+//     document.querySelector('.element__heart').classList.remove('element__heart');
+//   }
+// });
+
+
+
+// // Шаблоны
+// const imageCardTemplate = document.querySelector('#element').content.querySelector("element");
+
+// // Дом элементы
+// const imageContainer = document.querySelector(".elements");
+// const popupLocationContainer = document.querySelector(".popup-location__container");
+// const inputLocationName = document.getElementById("LocationName");
+// const inputLocationLink = document.getElementById("locationLink");
+
+// const handleSubmitAddCardForm = (event) => {
+//   event.preventDefault();
+
+//   renderImageCard({
+//     name: inputLocationName.value,
+//     link: inputLocationLink.value
+//   });
+
+//   inputLocationName.value = ' ';
+//   inputLocationLink.value = ' ';
+// };
+
+
+// const handleDeleteCard = (event) => {
+//   event.target.closest('.element').remove();
+// };
+
+// const handleCheckCard = (event) => {
+//   event.target.closest('.element').classList.toggle('element__heart_active');
+// };
+
+// // Генерация карточки
+
+// const generateImageCard = (todoData) => {
+//   const newImageCard = imageCardTemplate.cloneNode(true);
+
+//   const titleImageCard = newImageCard.querySelector('.element__text');
+//   titleTodoCard.textContent = todoData.title;
+
+//   const deleteButton = newImageCard.querySelector('element__trash');
+//   deleteButton.addEventListener('click', handleDeleteCard);
+
+//   const checkButton = newImageCard.querySelector('.element__heart_active');
+//   checkButton.addEventListener('click', handleCheckCard);
+
+//   return newImageCard;
+// }
+
+// // Рендер карточки
+
+// const renderImageCard = (todoData) => {
+//   imageContainer.prepend(generateImageCard(todoData));
+// };
+
+// initialCards.forEach((todoData) => {
+//   renderImageCard(todoData);
+// });
+
+// form.addEventListener("submit", handleSubmitAddCardForm);

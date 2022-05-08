@@ -5,7 +5,9 @@
   border: none;
   position: absolute;
   transition: all 0.2s ease;
-  background-color: none;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-left: 200px;
 }
 
 .element__trash:hover {
