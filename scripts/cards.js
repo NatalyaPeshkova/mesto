@@ -51,6 +51,10 @@ const handleSubmitAddCardForm = (event) => {
   inputLocationName.value = ' ';
   inputLocationLink.value = ' ';
 };
+const handelDeleteImageCard = (event) => {
+  event.target.closest('.element').remove();
+
+}
 
 // Генерация карточки
 const generateImageCard = (initialCards) => {
@@ -61,6 +65,9 @@ const generateImageCard = (initialCards) => {
 
   const pictureImageCard = newImageCard.querySelector('.element__img');
   pictureImageCard.src = initialCards.link;
+
+  const deleteButton = newImageCard.querySelector('.element__trash');
+  deleteButton.addEventListener('click', handelDeleteImageCard);
 
 
   return newImageCard;
