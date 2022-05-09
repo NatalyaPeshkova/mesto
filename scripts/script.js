@@ -1,4 +1,3 @@
-
 const popup = document.querySelector('.popup');
 const popupOpenButton = document.querySelector('.profile__edit-button');
 const popupCloseButton = document.querySelector('.popup__close-button');
@@ -31,28 +30,26 @@ popupOpenButton.addEventListener('click', functionPopupOpen);
 popupCloseButton.addEventListener('click', functionPopupOpen);
 
 //функция - добавляет модификатор для блока popup-location и открывает или закрывает его.
-function functionPopupLocationOpen(){
+function functionPopupLocationOpen() {
   popupLocation.classList.toggle('popup_opened');
 }
-popupLocationOpenButton.addEventListener('click',functionPopupLocationOpen);
+popupLocationOpenButton.addEventListener('click', functionPopupLocationOpen);
 popupLocationCloseButton.addEventListener('click', functionPopupLocationOpen);
 document.querySelector('.popup-location__button').addEventListener('click', functionPopupLocationOpen);
 
 //функция - добавляет модификатор для блока popup-image и закрывает его.
-function functionPopupImageOpen(){
+function functionPopupImageOpen() {
   document.querySelector('.popup-image').style.display = 'none';
 }
 popupImageCloseButton.addEventListener('click', functionPopupImageOpen);
 
 
 // Обработчик «отправки» формы/
-function formSubmitHandler (evt) {
-    evt.preventDefault();
-    profileName.textContent = nameInput.value;
-    profileJob.textContent = jobInput.value;
-    popup.classList.toggle('popup_opened');
- }
+function formSubmitHandler(evt) {
+  evt.preventDefault();
+  profileName.textContent = nameInput.value;
+  profileJob.textContent = jobInput.value;
+  popup.classList.toggle('popup_opened');
+}
 
 formElement.addEventListener('submit', formSubmitHandler);
-
-

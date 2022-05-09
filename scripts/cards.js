@@ -79,7 +79,7 @@ const generateImageCard = (initialCards) => {
 
 
   return newImageCard;
-}
+};
 
 //  Рендер карточки
 
@@ -104,72 +104,3 @@ document.querySelectorAll('.elements img').forEach(image => {
   }
 });
 
-
-// // лайк карточки
-// document.querySelectorAll('.element__heart').forEach(heartBtn => {
-//   heartBtn.onclick = () => {
-//     document.querySelector('.element__heart').classList.add('element__heart_active');
-//     document.querySelector('.element__heart').classList.remove('element__heart');
-//   }
-// });
-
-
-
-// // Шаблоны
-// const imageCardTemplate = document.querySelector('#element').content.querySelector("element");
-
-// // Дом элементы
-// const imageContainer = document.querySelector(".elements");
-// const popupLocationContainer = document.querySelector(".popup-location__container");
-// const inputLocationName = document.getElementById("LocationName");
-// const inputLocationLink = document.getElementById("locationLink");
-
-// const handleSubmitAddCardForm = (event) => {
-//   event.preventDefault();
-
-//   renderImageCard({
-//     name: inputLocationName.value,
-//     link: inputLocationLink.value
-//   });
-
-//   inputLocationName.value = ' ';
-//   inputLocationLink.value = ' ';
-// };
-
-
-// const handleDeleteCard = (event) => {
-//   event.target.closest('.element').remove();
-// };
-
-// const handleCheckCard = (event) => {
-//   event.target.closest('.element').classList.toggle('element__heart_active');
-// };
-
-// // Генерация карточки
-
-// const generateImageCard = (todoData) => {
-//   const newImageCard = imageCardTemplate.cloneNode(true);
-
-//   const titleImageCard = newImageCard.querySelector('.element__text');
-//   titleTodoCard.textContent = todoData.title;
-
-//   const deleteButton = newImageCard.querySelector('element__trash');
-//   deleteButton.addEventListener('click', handleDeleteCard);
-
-//   const checkButton = newImageCard.querySelector('.element__heart_active');
-//   checkButton.addEventListener('click', handleCheckCard);
-
-//   return newImageCard;
-// }
-
-// // Рендер карточки
-
-// const renderImageCard = (todoData) => {
-//   imageContainer.prepend(generateImageCard(todoData));
-// };
-
-// initialCards.forEach((todoData) => {
-//   renderImageCard(todoData);
-// });
-
-// form.addEventListener("submit", handleSubmitAddCardForm);
