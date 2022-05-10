@@ -1,4 +1,4 @@
-.popup__button {
+.popup_edit-profile__button {
   align-items: center;
   height: 50px;
   background-color: black;
@@ -16,13 +16,13 @@
   font-size: 18px;
 }
 
-.popup__button:hover {
+.popup_edit-profile__button:hover {
   cursor: pointer;
   opacity: .7;
 }
 
 @media screen and (max-width: 1000px) {
-  .popup__button {
+  .popup_edit-profile__button {
     max-width: 238px;
     height: 46px;
     margin: auto;

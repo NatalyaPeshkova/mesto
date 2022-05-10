@@ -1,4 +1,4 @@
-.popup__info-zone {
+.popup_edit-profile__info-zone {
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-block-start: 0;
@@ -18,7 +18,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .popup__info-zone {
+  .popup_edit-profile__info-zone {
     max-width: 283px;
     margin-left: 22px;
     margin-right: 22px;

@@ -1,16 +1,16 @@
-.popup__close-button-icon {
+.popup_edit-profile__close-button-icon {
   width: 32px;
   height: 32px;
 }
 
-.popup__close-button:hover {
+.popup_edit-profile__close-button:hover {
   cursor: pointer;
   opacity: 0.5;
 }
 
 
 @media screen and (max-width: 1000px) {
-  .popup__close-button-icon {
+  .popup_edit-profile__close-button-icon {
     width: 20px;
     height: 20px;
     top: 5;

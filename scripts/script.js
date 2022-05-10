@@ -1,10 +1,6 @@
 const popup = document.querySelector('.popup');
-const popupOpenButton = document.querySelector('.profile__edit-button');
-const popupCloseButton = document.querySelector('.popup__close-button');
-
-const popupLocation = document.querySelector('.popup-location');
-const popupLocationOpenButton = document.getElementById('addButton');
-const popupLocationCloseButton = document.getElementById('ClosePopupLocation');
+const popupOpenButton = document.querySelector('#editButton');
+const popupCloseButton = document.querySelector('#closeButton');
 
 const profileName = document.querySelector('.profile__text');
 const profileJob = document.querySelector('.profile__data');
@@ -19,8 +15,7 @@ const images = document.querySelectorAll('.element');
 
 
 // функция - добавляет модификатор для блока popup и открывает или закрывает его.
-// И заносит данные из профиля в поля ввода. ПР4: Поля формы.
-// При открытии формы поля «Имя» и «О себе» должны быть заполнены теми значениями, которые отображаются на странице.
+
 function functionPopupOpen() {
   popup.classList.toggle('popup_opened');
   nameInput.value = profileName.innerHTML;
@@ -29,19 +24,16 @@ function functionPopupOpen() {
 popupOpenButton.addEventListener('click', functionPopupOpen);
 popupCloseButton.addEventListener('click', functionPopupOpen);
 
-//функция - добавляет модификатор для блока popup-location и открывает или закрывает его.
-function functionPopupLocationOpen() {
-  popupLocation.classList.toggle('popup_opened');
-}
-popupLocationOpenButton.addEventListener('click', functionPopupLocationOpen);
-popupLocationCloseButton.addEventListener('click', functionPopupLocationOpen);
-document.querySelector('.popup-location__button').addEventListener('click', functionPopupLocationOpen);
 
-//функция - добавляет модификатор для блока popup-image и закрывает его.
-function functionPopupImageOpen() {
-  document.querySelector('.popup-image').style.display = 'none';
-}
-popupImageCloseButton.addEventListener('click', functionPopupImageOpen);
+// // функция открывает попап с картинкой места
+
+document.querySelectorAll('.elements img').forEach(image => {
+  image.onclick = () => {
+    document.querySelector('.popup-image').style.display = 'block';
+    document.querySelector('.popup-image img').src = image.getAttribute('src');
+    document.querySelector('.popup-image__text').textContent = image.getAttribute('h2');
+  }
+});
 
 
 // Обработчик «отправки» формы/

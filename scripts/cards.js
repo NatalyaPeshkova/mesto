@@ -92,15 +92,3 @@ initialCards.forEach((initialCards) => {
 });
 popupLocationContainer.addEventListener("submit", handleSubmitAddCardForm);
 
-
-
-// // функция открывает попап с картинкой места
-
-document.querySelectorAll('.elements img').forEach(image => {
-  image.onclick = () => {
-    document.querySelector('.popup-image').style.display = 'block';
-    document.querySelector('.popup-image img').src = image.getAttribute('src');
-    document.querySelector('.popup-image__text').textContent = image.getAttribute('h2');
-  }
-});
-
