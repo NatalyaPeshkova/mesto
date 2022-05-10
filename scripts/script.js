@@ -1,6 +1,6 @@
 const popup = document.querySelector('.popup');
-const popupOpenButton = document.querySelector('#editButton');
-const popupCloseButton = document.querySelector('#closeButton');
+const popupOpenButton = document.querySelector('.popup_open-button');
+const popupCloseButton = document.querySelector('.popup_close-button');
 
 const profileName = document.querySelector('.profile__text');
 const profileJob = document.querySelector('.profile__data');
@@ -29,7 +29,7 @@ popupCloseButton.addEventListener('click', functionPopupOpen);
 
 document.querySelectorAll('.elements img').forEach(image => {
   image.onclick = () => {
-    document.querySelector('.popup-image').style.display = 'block';
+    document.querySelector('.popup-image').classList.toggle('popup_opened');
     document.querySelector('.popup-image img').src = image.getAttribute('src');
     document.querySelector('.popup-image__text').textContent = image.getAttribute('h2');
   }
