@@ -1,4 +1,4 @@
-.popup-image__container {
+.popup_image__container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -17,7 +17,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .popup-image__container {
+  .popup_image__container {
     margin-top: 123px;
     max-width: 282px;
   }

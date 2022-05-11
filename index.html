@@ -18,10 +18,10 @@
         <img class="profile__avatar" alt="Фото" src="./img/Avatar.jpg">
         <div class="profile__info">
           <h1 class="profile__text">Жак-Ив Кусто</h1>
-          <button class="profile__edit-button popup_open-button" type="button""></button>
+          <button class="profile__edit-button button__open" type="button" ></button>
           <p class="profile__data"> Исследователь океана</p>
         </div>
-        <button class="profile__add-button popup_open-button" type="button"></button>
+        <button class="profile__add-button button__open" type="button" id="addButton"></button>
       </section>
 
       <section class="elements">
@@ -36,8 +36,8 @@
   <!-- попап редактирования информации о пользователе -->
   <div class="popup popup_edit-profile">
     <form class="popup_edit-profile__container" name="popupContainer" id="#form">
-      <button class="popup_edit-profile__close-button popup_close-button" type="button">
-        <img src="./img/Close_Icon.svg" alt="закрыть" class="popup_edit-profile__close-button-icon popup_close-button">
+      <button class="popup_edit-profile__close-button popup__close-button" type="button">
+        <img src="./img/Close_Icon.svg" alt="закрыть" class="popup_edit-profile__close-button-icon popup__close-button">
       </button>
       <h3 class="popup_edit-profile__title">Редактировать профиль</h3>
       <fieldset class="popup_edit-profile__info-zone">
@@ -55,8 +55,8 @@
   <!-- попап редактирования информации о месте -->
   <div class="popup popup-location">
     <form class="popup-location__container" name="popupLocationContainer" id="#locationForm">
-      <button class="popup-location__close-button popup_close-button" type="button">
-        <img src="./img/Close_Icon.svg" alt="закрыть" class="popup-location__close-button-icon" id="ClosePopupLocation">
+      <button class="popup-location__close-button popup__close-button" type="button">
+        <img src="./img/Close_Icon.svg" alt="закрыть" class="popup__close-button popup-location__close-button-icon" id="ClosePopupLocation">
       </button>
       <h3 class="popup-location__title">Новое место</h3>
       <fieldset class="popup-location__info-zone">
@@ -67,19 +67,19 @@
         <input type="text" name="link" class="popup-location__text" placeholder="Ссылка на картинку" required
           id="locationLink">
       </fieldset>
-      <button type="submit" class="popup-location__button popup_close-button" value="Сохранить"
+      <button type="submit" class="popup-location__button popup__close-button" value="Сохранить"
         name="locationSubmitButton">Создать</button>
     </form>
   </div>
 
   <!-- попап карточка-->
-  <div class="popup popup-image">
-    <div class="popup-image__container" name="popupImageContainer">
+  <div class="popup_image">
+    <div class="popup_image__container" name="popupImageContainer">
       <img class="popup-image__picture" alt="Увеличенная фотография" src="./img/1s.jpg">
-      <button class="popup-image__close-button popup_close-button" type="button">
-        <img src="./img/Close_Icon.svg" alt="закрыть" class="popup-image__close-button-icon popup_close-button" id="ClosePopupImage">
+      <button class="popup_image__close-button" type="button">
+        <img src="./img/Close_Icon.svg" alt="закрыть" class="popup_image__close-button popup_image__close-button-icon" id="ClosePopupImage">
       </button>
-      <div class="popup-image__text" id="imageName">Карачаевск</div>
+      <div class="popup_image__text" id="imageName">Карачаевск</div>
     </div>
   </div>
 
