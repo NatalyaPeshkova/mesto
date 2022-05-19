@@ -3,7 +3,7 @@
   display: grid;
   justify-content: center;
   grid-template-columns: 282px 282px 282px;
-  grid-template-rows: repeat(2, 361px);
+  grid-template-rows: auto;
   grid-template-areas:
     "element element element"
     "element element element";
