@@ -1,9 +1,6 @@
-.popup-location__text {
+.popup-location__input {
   display: block;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+	margin: 0;
   font-weight: normal;
   font-family: 'Inter', Arial, sans-serif;
   font-size: 14px;
@@ -12,11 +9,10 @@
   padding: 0;
   height: 27px;
   width: 358px;
-  margin-top: 0;
 }
 
 @media screen and (max-width: 1000px) {
-  .popup-location__text {
+  .popup-location__input {
     width: 238px;
   }
 }

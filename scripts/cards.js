@@ -35,8 +35,8 @@ console.log(imageCardTemplate);
 
 const imageContainer = document.querySelector(".elements");
 const popupLocationContainer = document.querySelector(".popup-location__container");
-const inputLocationName = document.getElementById("LocationName");
-const inputLocationLink = document.getElementById("locationLink");
+const inputLocationName = document.querySelector('.popup-location__input_link');
+const inputLocationLink = document.querySelector('.popup-location__input_name');
 
 // Обработчики событий
 

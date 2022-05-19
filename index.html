@@ -15,44 +15,84 @@
     </header>
     <main class="main">
       <section class="profile">
-        <img class="profile__avatar" alt="Фото" src="./img/Avatar.jpg">
+        <img class="profile__avatar" alt="Фото" src="./img/Avatar.png">
         <div class="profile__info">
           <h1 class="profile__text">Жак-Ив Кусто</h1>
-          <button class="profile__edit-button open-button" type="button" ></button>
+          <button class="profile__edit-button" type="button"></button>
           <p class="profile__data"> Исследователь океана</p>
         </div>
-        <button class="profile__add-button open-button" type="button" id="addButton"></button>
+        <button class="profile__add-button" type="button"></button>
       </section>
 
       <section class="elements">
+        <div class="element">
+          <img class="element__img" alt="Карачаевск" src="./img/1Karachaevsk.png">
+          <div class="element__footer">
+            <h2 class="element__text">Карачаевск</h2>
+            <button class="element__heart" type="button"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__img" alt="Эльбрус" src="./img/2Elbrus.png">
+          <div class="element__footer">
+            <h2 class="element__text"> Гора Эльбрус</h2>
+            <button class="element__heart" type="submit"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__img" alt="Домбай" src="./img/3Dombay.png">
+          <div class="element__footer">
+            <h2 class="element__text">Домбай</h2>
+            <button class="element__heart" type="submit"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__img" alt="Фото Эльбрус" src="./img/4Elbrus.png">
+          <div class="element__footer">
+            <h2 class="element__text"> Гора Эльбрус</h2>
+            <button class="element__heart" type="submit"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__img" alt="Фото Домбай" src="./img/5Dombay.png">
+          <div class="element__footer">
+            <h2 class="element__text">Домбай</h2>
+            <button class="element__heart" type="submit"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__img" alt="Карачаево-Черкесия" src="./img/6Karachaevo-Ch.png">
+          <div class="element__footer">
+            <h2 class="element__text">Карачаево-Черкесия</h2>
+            <button class="element__heart" type="submit"></button>
+          </div>
+        </div>
       </section>
-
     </main>
   </div>
   <footer class="footer">
     <p class="footer__info">&copy; 2022 Mesto Russia</p>
   </footer>
 
-  <!-- попап редактирования информации о пользователе -->
-  <div class="popup popup_edit-profile">
-    <form class="popup_edit-profile__container" name="popupContainer" id="#form">
-      <button class="popup_edit-profile__close-button popup__close-button" type="button">
-        <img src="./img/Close_Icon.svg" alt="закрыть" class="popup_edit-profile__close-button-icon popup__close-button">
+  <div class="popup">
+    <form class="popup__container" name="popupContainer" id="#form">
+      <button class="popup__close-button" type="button">
+        <img src="./img/Close_Icon.svg" alt="закрыть" class="popup__close-button-icon">
       </button>
-      <h3 class="popup_edit-profile__title">Редактировать профиль</h3>
-      <fieldset class="popup_edit-profile__info-zone">
-        <input type="text" name="profilename" class="popup_edit-profile__text" value="Проверка смены имени" placeholder="введите имя"
+      <h3 class="popup__title">Редактировать профиль</h3>
+      <fieldset class="popup__info-zone">
+        <input type="text" name="profilename" class="popup__text" value="Проверка смены имени" placeholder="введите имя"
           required id="popupName">
       </fieldset>
-      <fieldset class="popup_edit-profile__info-zone">
-        <input type="text" name="info" value="Проверка смены работы" class="popup_edit-profile__text" placeholder="ваша деятельность"
+      <fieldset class="popup__info-zone">
+        <input type="text" name="info" value="Проверка смены работы" class="popup__text" placeholder="ваша деятельность"
           required id="job">
       </fieldset>
-      <button type="submit" class="popup_edit-profile__button" value="Сохранить" name="submitButton">Сохранить</button>
+      <button type="submit" class="popup__button" value="Сохранить" name="submitButton">Сохранить</button>
     </form>
   </div>
 
-  <!-- попап редактирования информации о месте -->
+<!-- попап добавления места -->
   <div class="popup popup-location">
     <form class="popup-location__container" name="popupLocationContainer" id="#locationForm">
       <button class="popup-location__close-button popup__close-button" type="button">
@@ -60,12 +100,10 @@
       </button>
       <h3 class="popup-location__title">Новое место</h3>
       <fieldset class="popup-location__info-zone">
-        <input type="text" name="locationname" class="popup-location__text" placeholder="Название" required
-          id="LocationName">
+        <input type="text" name="location-name" class="popup-location__input popup-location__input_name" placeholder="Название" required>
       </fieldset>
       <fieldset class="popup-location__info-zone">
-        <input type="text" name="link" class="popup-location__text" placeholder="Ссылка на картинку" required
-          id="locationLink">
+        <input type="text" name="location-link" class="popup-location__input popup-location__input_link" placeholder="Ссылка на картинку" required>
       </fieldset>
       <button type="submit" class="popup-location__button popup__close-button" value="Сохранить"
         name="locationSubmitButton">Создать</button>
